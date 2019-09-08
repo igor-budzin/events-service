@@ -1,0 +1,63 @@
+@import "./variables.scss";
+@import "./humburger.scss";
+
+// @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+
+
+header.header {
+  background-color: #000000e6;
+  height: 50px;
+  padding: 0 60px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+
+  .header__logo {
+    color: #fff;
+    font-size: 24px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 300;
+    display: inline-block;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+
+  .header__mobile-panel {
+    display: inline-block;
+    float: left;
+    height: 50px;
+    flex: 0 200px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .header__menu-wrapper {
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    margin-left: 0px;
+    flex: 1 auto;
+  }
+
+  .header__menu-item {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 40px;
+
+    &:hover {
+      color: $color-main-blue;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.right {
+      float: right;
+    }
+  }
+}
